@@ -1,0 +1,131 @@
+*
+{
+    padding: 5px;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.fixed
+{
+    position: fixed;
+    width: 100%;
+    
+}
+
+.container
+{   
+    display:grid;
+    flex-flow: row wrap;
+    grid-template-columns: repeat(auto-fit,minmax(50%,auto));
+    /* background-color: blueviolet; */
+}
+
+.icon
+{
+    display: none;
+
+}
+
+.third
+{
+    margin-top: 150px;
+}
+
+section h2
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flow
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    
+}
+
+.a
+{
+    width: 30%;
+}
+
+.flow h3
+{
+    text-align: center;
+}
+
+.navmenu
+{
+    display: none;
+   width: 100%;
+    position: fixed;
+    background-color: gray;
+    top: 80px;
+    left: -400px;
+}
+
+li
+{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:900px)
+{
+    .flow
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    
+}
+
+.a
+{
+    width: 45%;
+}
+#b
+{
+    width: 95%;
+}
+}
+
+@media screen and  (max-width:599px)
+{
+    .flow
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    
+}
+
+.a
+{
+    width: 97%;
+}
+
+.icon
+{
+    display: grid;
+    justify-content: end;
+    font-size: x-large;
+    cursor: pointer;
+
+}
+
+
+.navmenu
+{
+    display: block;
+}
+
+}
